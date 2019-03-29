@@ -27,8 +27,6 @@ public class Job {
     @Transient
     private String date;
 
-
-
     public Job() {
     }
 

@@ -31,9 +31,7 @@ public class JobRestController {
                                    @RequestParam(required = false) String timeTo
     ) {
 
-        List<Job> jobs = dbService.getQuery(user, type, device, timeFrom, timeTo);
-        System.out.println(jobs);
-        return jobs;
+        return dbService.getQuery(user, type, device, timeFrom, timeTo);
     }
 
     @PostMapping("/jobs")
