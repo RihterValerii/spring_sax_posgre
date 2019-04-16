@@ -27,6 +27,9 @@ public class Job {
     @Transient
     private String date;
 
+    @Column(name = "date2")
+    private java.sql.Date date2;
+
     public Job() {
     }
 
@@ -44,6 +47,14 @@ public class Job {
         this.amount = amount;
         this.id = id;
         longDate = date;
+    }
+
+    public java.sql.Date getDate2() {
+        return date2;
+    }
+
+    public void setDate2(java.sql.Date date2) {
+        this.date2 = date2;
     }
 
     public void setType(String type) {
